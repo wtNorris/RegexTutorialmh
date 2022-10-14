@@ -67,22 +67,25 @@ Capturing groups in () is the regex can treat multiple characters as one unit. O
 
 There are two indetical bracket expression in this regex, [a-f0-9]. This represents the character range that the expression is trying to match. The [a-f] represents the range of possible hex letters, as they only go from A to F. The [0-9] represents the whole integers found in hex codes. Grouped together the way they are, it will match any string with any combination of the letters and integers in their respective ranges. Also note this does not require the string to match all requirements, as long as it meets one.
 
-### Greedy and Lazy Match
+### Greedy and Lazy Match (the hex matching regex does not include flags so a brief definition is provided)
+
+In very short terms, a greedy match will match the longest possible string. A lazy will return the shortest. This [resource](https://www.regular-expressions.info/repeat.html)<sup>1</sup> goes further into depth on this topic.
+
+### Boundaries (the hex matching regex does not include flags so a brief definition is provided)
+
+" A word boundary, in most regex dialects, is a position between \w and \W (non-word char), or at the beginning or end of a string if it begins or ends (respectively) with a word character ([0-9A-Za-z_]). " -Excerp taken from [stackoverflow](https://stackoverflow.com/users/54323/brianary)<sup>2</sup>, [user brianary](https://stackoverflow.com/users/54323/brianary)
+
+### Back-references (the hex matching regex does not include flags so a brief definition is provided)
 
 
 
-### Boundaries
+### Look-ahead and Look-behind (the hex matching regex does not include flags so a brief definition is provided)
 
 
 
-### Back-references
-
-
-
-### Look-ahead and Look-behind
-
-
-
-## Author
+## Author & Resources Cited
 
 Molly Hesse is a student of web development, with passions in the arts. Her github can be found here: [Github](https://github.com/wtNorris).
+
+1. https://www.regular-expressions.info/repeat.html Copyright © 2003-2022 Jan Goyvaerts.
+
